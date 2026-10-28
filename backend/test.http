@@ -1,0 +1,52 @@
+### cadastrar funcionario
+POST http://localhost:3000/funcionario
+Content-Type: application/json
+
+{
+    "nome": "Paula",
+    "email": "paula@gmail.com",
+    "senha": "abc"
+}
+
+
+### cadastrar motorista
+POST http://localhost:3000/motorista
+Content-Type: application/json
+
+{
+    "nome": "Paula",
+    "cnh": "22222",
+    "cpf": "35352235425",
+    "telefone": "41 99489-1930"
+}
+
+### listar motorista
+GET http://localhost:3000/motoristas
+
+
+### consultar motorista
+GET http://localhost:3000/motorista/2
+
+
+### cadastrar carga
+POST http://localhost:3000/carga
+Content-Type: application/json
+
+{
+    "descricao": "sapato",
+    "peso": 3.56,
+    "volume": 0.50,
+    "codRastreio": "930ddio473KLMFnjkui",
+    "idMotorista": 1
+}
+
+### cadastrar entrega
+POST http://localhost:3000/entrega
+Content-Type: application/json
+
+{
+    "destino": "Itajaí",
+    "status": "TRANSITO",
+    "data": "2026-10-04 14:00",
+    "idCarga": 1
+}
